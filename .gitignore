@@ -12,3 +12,4 @@ wheels/
 # Source Data
 source_data/*.csv
 source_data/*.xlsx
+results/prompt_and_response.csv
