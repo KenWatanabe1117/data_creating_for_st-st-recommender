@@ -14,5 +14,6 @@ keywords = {s:[k.strip() for k in r.split('\n')[-1].split(',')] for s,r in zip(d
 
 keyword_list = list(set(sum([v for v in keywords.values()],[])))
 
+pd.DataFrame.from_dict(keywords, orient='index').to_csv('results/keywords_original.csv')
 with open('results/keywords_original.txt','w') as f:
     f.write('\n'.join(keyword_list))
