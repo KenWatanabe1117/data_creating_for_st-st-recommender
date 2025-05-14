@@ -46,4 +46,4 @@ result_df = pd.DataFrame({
     'Response': response_list
 })
 
-result_df.to_csv('results/promt_and_response.csv')
+result_df.to_csv('results/prompt_and_response.csv', index=False)
